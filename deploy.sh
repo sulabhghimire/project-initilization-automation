@@ -23,7 +23,6 @@ fi
 projectType="${projectType,,}"
 
 if [ $projectType = "flutter" ]; then
-    source venv/bin/activate
     va=$(python main.py flutter)
     curr_dir=$(pwd)
     cd $va
